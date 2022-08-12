@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  languagetool:
+    build: .
+    container_name: languagetool
+    ports:
+      - 80:8010
+    environment:
+      - langtool_languageModel=/ngrams
+      - Java_Xms=512m
+      - Java_Xmx=1g
