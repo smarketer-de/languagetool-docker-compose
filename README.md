@@ -28,6 +28,8 @@ To set up the integration, define these secrets in GitHub Actions:
 - `EB_APPLICATION_NAME` (Application name in AWS Elastic Beanstalk)
 - `EB_ENV_NAME` (Environment name in AWS Elastic Beanstalk)
 
+It should be enough for your AWS user to have the policies AWSElasticBeanstalkWebTier and AWSElasticBeanstalkManagedUpdatesCustomerRolePolicy attached to be able to deploy your project.
+
 ## Usage
 
 After deploying, the LanguageTool server is accessible at `http://example.com/v2/check`. For more information on using the API, see [the LanguageTool API documentation](https://languagetool.org/http-api/#!/default/post_check).
